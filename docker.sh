@@ -1,10 +1,11 @@
 #!/bin/bash
 #maven打包
+git pull
 mvn clean package
 echo 'package ok!'
 echo 'build start!'
 service_name="eureka-server"
-service_prot=8888
+service_prot=9000
 #查看镜像id
 IID=$(docker images | grep "$service_name" | awk '{print $3}')
 echo "IID $IID"

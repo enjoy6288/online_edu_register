@@ -2,7 +2,7 @@ spring:
   application:
     name: EDU-REGISTER
 server:
-  port: 8888
+  port: 9000
 eureka:
   instance:
     hostname: localhost
