@@ -38,6 +38,6 @@ else
     echo "no exist $SERVER_NAME container"
 fi
 #启动
-docker run -d --name $service_name --net=host -p $service_prot:$service_prot $service_name
+docker run -d --name $service_name --network=bridge -p $service_prot:$service_prot $service_name
 #查看启动日志
 #docker logs -f  $service_name
