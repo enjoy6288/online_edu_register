@@ -4,7 +4,7 @@ git pull
 mvn clean package
 echo 'package ok!'
 echo 'build start!'
-service_name="eureka-server"
+service_name="online_edu_register"
 service_prot=9000
 #查看镜像id
 IID=$(docker images | grep "$service_name" | awk '{print $3}')
